@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    h1 #{page_title}
+    form(method='POST', action='/books/edit/'+book._id)
+        #form-group
+            label Title:
+            input.form-control(name='title', type='text', value=book.title)
+        #form-group
+            label Author:
+            input.form-control(name='author', type='text', value=book.author)
+        #form-group
+            label Status:
+            select.form-control(name="status")
+                option(value='', disabled=true) --Select--
+                option(value='WR', selected = book.status == 'WR' ? true : false) Want to Read
+                option(value='CR', selected = book.status == 'CR' ? true : false) Currently Reading
+                option(value='HR', selected = book.status == 'HR' ? true : false) Have Read
+        br
+        input.btn.btn-primary(type='submit', value='Submit')
+        input.btn.btn-danger(href="", value='Submit')

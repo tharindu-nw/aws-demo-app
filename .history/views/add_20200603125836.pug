@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    h1 #{page_title}
+    form(method='POST', action='/books/add')
+        #form-group
+            label Title:
+            input.form-control(name='title', type='text')
+        #form-group
+            label Author:
+            input.form-control(name='title', type='text')
+        #form-group
+            label Status:
+            input.form-control(name='title', type='text')

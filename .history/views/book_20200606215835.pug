@@ -1,0 +1,10 @@
+extends layout
+    
+block content
+    h1=book.title
+    h5 written by #{book.author}
+    h5
+        mark #{book.status}
+    hr
+    a.btn.btn-light(href="/books/edit/"+book.id) Edit
+    a.btn.btn-light(href="#", data-id=book.id) Edit

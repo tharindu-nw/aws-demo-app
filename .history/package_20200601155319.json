@@ -1,0 +1,11 @@
+{
+	"name": "express-demo",
+	"version": "1.0.0",
+	"description": "Simple knowledge base app done with node and express",
+	"main": "app.js",
+	"scripts": {
+		"start": "npm app.js"
+	},
+	"author": "tharindu-nw",
+	"license": "ISC"
+}

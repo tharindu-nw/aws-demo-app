@@ -1,0 +1,5 @@
+  
+{
+    "mongoURI": "mongodb+srv://tharindu-nw:tharindu123@cluster0.oinqt.mongodb.net/books?retryWrites=true&w=majority",
+    "jwtSecret": "sl_myJwtSecret"
+  }
